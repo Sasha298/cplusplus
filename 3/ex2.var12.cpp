@@ -20,6 +20,18 @@ int main() {
         case 93:
             operatorName = "Lifecell";
             break;
+        case 11:
+            operatorName = "Oppo";
+            break;
+        case 22:
+            operatorName = "Loop";
+            break;
+        case 33:
+            operatorName = "Hofer";
+            break;
+	case 44:
+            operatorName = "Lidl";
+            break;
         default:
             operatorName = "Unknown operator";
             break;
