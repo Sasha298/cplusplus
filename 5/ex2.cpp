@@ -1,13 +1,13 @@
 #include <iostream>
 
-using namespace std;
-
 int main() {
-    long long factorial = 1;
+    int sum = 0;
 
-    for (int i = 1; i <= 15; ++i) {
-        factorial *= i;
-        cout << "Factorial of " << i << " = " << factorial << endl;
+    for (int number = 1; number <= 100; number += 2) {
+        sum += number;
     }
 
+    std::cout << "The sum of odd numbers from 1 to 100 is equal: " << sum << std::endl;
+
+    return 0;
 }

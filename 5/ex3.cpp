@@ -6,7 +6,7 @@ using namespace std;
 
 double f(double x) {
     
-    return 1/x + sqrt(x+3) + 6; 
+    return pow(x ,3/4)+6; 
 }
 
 int main() {
