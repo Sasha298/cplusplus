@@ -1,34 +1,29 @@
 #include <iostream>
-#include <climits>
 
-int main() {
-    const int size = 7; 
-    int array[size] = {-2, 3, -4, 8, -6, -7, 8}; 
-    
-    int maxIndex = -1;
-    int maxValue = INT_MIN;
-    
-   
-    for (int i = 0; i < size; ++i) {
-        if (array[i] > maxValue) {
-            maxValue = array[i];
-            maxIndex = i;
+using namespace std;
+int main()
+{
+    int m = 12;
+    int numbers[m];
+    int temp = 0;
+    for (int i=0;i<m;i++){
+        cin >> numbers[i];
+    }
+    int i =0;
+    while (i <= m-1){
+        if (numbers[i]>numbers[i+1]){
+            temp = numbers[i];
+            numbers[i]=numbers[i+1];
+            numbers[i+1] = temp;
+            i=0;
+            }
+        else{i++;}
         }
-    }
-    
-  
-    for (int i = 0; i < maxIndex; ++i) {
-        if (array[i] < 0) {
-            array[i] = 0;
+    for (int i=0;i<m;i++){
+        cout<<numbers[i]<<" ";
         }
-    }
-    
-   
-    std::cout << "Result: ";
-    for (int i = 0; i < size; ++i) {
-        std::cout << array[i] << " ";
-    }
-    std::cout << std::endl;
-    
-    return 0;
+    cout<<endl;
+    for (int i=m-1;i>=0;i--){
+        cout<<numbers[i]<<" ";
+        }
 }
