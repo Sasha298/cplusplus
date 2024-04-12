@@ -6,10 +6,6 @@ class Person
 public:
 	string name;
 	int age;
-	string name1;
-	int age1;
-	string name2;
-	int age2;
 };
 void print(Person* person)
 {
